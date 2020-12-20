@@ -1,12 +1,80 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beckett Normington – Programmer</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/minireset.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
+	<link rel="icon" 
+      type="image/icon" 
+      href="images/creeper.jpg">
+    <script defer type="text/javascript" src="js/main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+  </head>
+  <body>
+    <div id="wallpaper" class="wallpaper" data-image="images/austria.jpg"></div>
+    <div class="content">
+      <aside class="side">
+        <figure id="picture" class="picture">
+          <div class="picture-shadow"></div>
+          <img id="pictureImage" class="picture-image"
+               src="images/creeper.jpg"
+               srcset="images/creeper.jpg 1x,
+                       images/creeper@2x.jpg 2x,
+                       images/creeper@3x.jpg 3x"
+               alt="Portrait of Beckett Normington (no face to preserve my privacy)"
+               width="320"
+               height="320">
+        </figure>
+      </aside>
+      <main class="about">
+        <h1 class="name">
+          Hi, I'm Beckett Normington
+        </h1>
+        <p class="job">
+          Programmer
+        </p>
+        <hr class="hr">
+        <div class="description">
+          <p>
+            I spend my time traveling the world,
+            improving my programming skills, and
+            write programs that get the job done.
+          </p>
+        </div>
+        <div class="contact">
+          <a class="button" href="mailto:beckett@chatter-social.com">
+            Get in touch
+          </a>
+        </div>
+        <ul class="social">
+          <li>
+            <a href="https://github.com/beckettnormington" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://dev.to/beckettnormington" target="_blank">
+              <i class="fab fa-dev"></i>
+            </a>
+          </li>
+        </ul>
+      </main>
+    </div>
+    <noscript>
+      <style type="text/css">
+        .wallpaper {
+          animation-name: zoomOut;
+        }
 
-<head>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-  <h1>This is my site, hosted on Github Pages. It's a work-in-progress, so keep that in mind while browsing<br></h1>
-  <p>I'm currently learning how to design a website from scratch.
-</body>
+        .picture {
+          animation-name: dropIn;
+        }
+      </style>
+    </noscript>
+  </body>
+</html>
