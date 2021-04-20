@@ -601,7 +601,7 @@ function start_vm(user, pwd)
 
     if (typeof WebAssembly === "object") {
         /* wasm support : the memory grows automatically */
-        vm_url = "https://bellard.org/jslinux/" + vm_file + "-wasm.js";
+        vm_url = vm_file + "-wasm.js";
     } else {
         /* set the total memory */
         alloc_size = mem_size;
